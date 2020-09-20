@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:tag="layout/dialog_account_management_0" android:background="@color/transparent_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:tag="binding_1" android:background="@drawable/bg_circular_white_2" android:layout_width="960mm" android:layout_height="wrap_content">
+        <TextView android:textSize="48mm" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80mm" android:text="@string/dialog_account_title"/>
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@+id/recycler_view" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40mm" android:layout_above="@+id/btn_add_user" android:layout_below="@+id/btn_back"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="50mm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20mm" android:showDividers="middle">
+            <TextView android:textSize="36mm" android:textColor="@color/color_font" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/bg_circular_red_grey" android:visibility="gone" android:layout_width="280mm" android:layout_height="80mm" android:layout_marginRight="80mm" android:text="@string/cancel"/>
+            <TextView android:textSize="36mm" android:textColor="@color/white" android:gravity="center" android:id="@+id/ok" android:tag="binding_3" android:background="@drawable/bg_circular_red_bg" android:layout_width="280mm" android:layout_height="80mm" android:text="@string/dialog_start_game"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

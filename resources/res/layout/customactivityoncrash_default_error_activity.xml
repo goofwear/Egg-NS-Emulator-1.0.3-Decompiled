@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/customactivityoncrash_activity_horizontal_margin" android:paddingTop="@dimen/customactivityoncrash_activity_vertical_margin" android:paddingRight="@dimen/customactivityoncrash_activity_horizontal_margin" android:paddingBottom="@dimen/customactivityoncrash_activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/customactivityoncrash_error_activity_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/customactivityoncrash_error_image" android:contentDescription="@null"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customactivityoncrash_activity_vertical_margin" android:text="@string/customactivityoncrash_error_activity_error_occurred_explanation"/>
+            <Button android:id="@+id/customactivityoncrash_error_activity_restart_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customactivityoncrash_activity_vertical_margin" android:text="@string/customactivityoncrash_error_activity_close_app"/>
+            <Button android:textColor="?attr/colorPrimary" android:id="@+id/customactivityoncrash_error_activity_more_info_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/customactivityoncrash_error_activity_error_details" style="?attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

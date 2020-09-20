@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_circular_white_2" android:padding="80mm" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="960mm" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layout_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50mm" android:showDividers="middle">
+        <TextView android:textSize="36mm" android:textColor="@color/color_font" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/bg_circular_red_grey" android:layout_width="280mm" android:layout_height="80mm" android:layout_marginRight="80mm" android:text="@string/cancel" android:maxLines="1" android:autoSizeTextType="1" android:autoSizeStepGranularity="1mm" android:autoSizeMinTextSize="10mm" android:autoSizeMaxTextSize="36mm"/>
+        <TextView android:textSize="36mm" android:textColor="@color/white" android:gravity="center" android:id="@+id/ok" android:background="@drawable/bg_circular_red_bg" android:layout_width="280mm" android:layout_height="80mm" android:text="@string/sure" android:maxLines="1" android:autoSizeTextType="1" android:autoSizeStepGranularity="1mm" android:autoSizeMinTextSize="10mm" android:autoSizeMaxTextSize="36mm"/>
+    </LinearLayout>
+</LinearLayout>

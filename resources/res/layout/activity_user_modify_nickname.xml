@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/activity_user_modify_nickname_0" android:background="@drawable/bg_line1" android:paddingTop="80mm" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_line1" android:paddingBottom="@dimen/left_panel_padding" android:layout_width="@dimen/left_panel_width" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/btn_back" android:tag="binding_1" android:background="@color/color_bg_sub" android:padding="30mm" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv" android:layout_width="20mm" android:layout_height="33mm" android:src="@drawable/nav_icon_back" android:scaleType="fitXY"/>
+            <TextView android:textSize="36mm" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20mm" android:text="@string/game_detail_back"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_big" android:textColor="@color/color_font_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100mm" android:text="@string/user_modify_nickname" android:layout_below="@+id/btn_back"/>
+        <ImageView android:background="@color/color_bg_red" android:layout_width="180mm" android:layout_height="10mm" android:layout_marginTop="10mm"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@drawable/bg_line" android:padding="40mm" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#0dffffff" android:padding="100mm" android:layout_width="1200mm" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_theme_font" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_nickname"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40mm">
+                <EditText android:textSize="@dimen/font_middle" android:id="@+id/et_nickname" android:tag="binding_2" android:background="@drawable/bg_circular_white_3" android:padding="30mm" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="16" android:imeOptions="flagNoExtractUi"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/btn_clear" android:tag="binding_3" android:background="@drawable/input_icon_close" android:layout_width="70mm" android:layout_height="70mm" android:layout_marginEnd="40mm"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_save" android:tag="binding_4" android:background="@drawable/bg_circular_red" android:padding="30mm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80mm" android:layout_marginBottom="100mm" android:text="@string/save"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

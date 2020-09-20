@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/activity_user_center_0" android:background="@drawable/bg_line1" android:paddingTop="80mm" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_line1" android:paddingBottom="@dimen/left_panel_padding" android:layout_width="@dimen/left_panel_width" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/btn_back" android:tag="binding_1" android:background="@color/color_bg_sub" android:padding="30mm" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv" android:layout_width="20mm" android:layout_height="33mm" android:src="@drawable/nav_icon_back" android:scaleType="fitXY"/>
+            <TextView android:textSize="36mm" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20mm" android:text="@string/game_detail_back"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_font_red" android:id="@+id/btn_logout" android:tag="binding_2" android:background="@drawable/bg_circular_red_border" android:paddingLeft="40mm" android:paddingTop="10mm" android:paddingRight="40mm" android:paddingBottom="10mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50mm" android:text="@string/user_login_logout" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_font_blue" android:gravity="center" android:id="@+id/btn_add_user" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30mm" android:text="@string/user_login_add_register" android:layout_above="@+id/btn_logout" android:paddingStart="10mm" android:paddingEnd="10mm"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_add_user" android:layout_below="@+id/btn_back">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40mm" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40mm" android:layout_centerInParent="true">
+                <ImageView android:layout_width="@dimen/img_wight1" android:layout_height="@dimen/img_wight1" android:src="@drawable/image_user_nomal"/>
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/color_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5mm" android:text="@string/dialog_add_account"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_line" android:padding="20mm" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:tag="binding_6" android:background="@drawable/bg_circular_white_3" android:padding="20mm" android:visibility="gone" android:layout_width="0mm" android:layout_height="280mm" android:layout_margin="20mm" android:layout_weight="1">
+                <ImageView android:id="@+id/img_archive" android:background="@drawable/center_icon_archive" android:layout_width="100mm" android:layout_height="100mm" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20mm" android:layout_marginEnd="20mm" android:layout_toEndOf="@+id/img_archive">
+                    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_black" android:id="@+id/tv_archive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_archives"/>
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/color_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_archives1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_7" android:background="@drawable/bg_circular_white_3" android:padding="20mm" android:layout_width="0mm" android:layout_height="280mm" android:layout_margin="20mm" android:layout_weight="1">
+                <ImageView android:id="@+id/img_language" android:background="@drawable/center_icon_language" android:layout_width="100mm" android:layout_height="100mm" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20mm" android:layout_marginEnd="20mm" android:layout_toEndOf="@+id/img_language">
+                    <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_black" android:id="@+id/tv_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_language"/>
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/color_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_language1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_8" android:background="@drawable/bg_circular_white_3" android:padding="20mm" android:layout_width="0mm" android:layout_height="280mm" android:layout_margin="20mm" android:layout_weight="1">
+                <ImageView android:id="@+id/img_update" android:background="@drawable/center_icon_update" android:layout_width="100mm" android:layout_height="100mm" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20mm" android:layout_marginEnd="20mm" android:layout_toEndOf="@+id/img_update">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_black" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/user_version_update" android:layout_weight="1"/>
+                        <ImageView android:tag="binding_9" android:layout_width="20mm" android:layout_height="20mm" android:layout_marginLeft="10mm" android:src="@drawable/ic_red_meg_poi" android:scaleType="fitXY"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/color_black1" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50mm">
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_theme_font" android:padding="20mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_privacy_agreement"/>
+            <View android:layout_gravity="center_vertical" android:background="@color/color_theme_font" android:layout_width="1mm" android:layout_height="34mm"/>
+            <TextView android:textSize="@dimen/font_middle" android:textColor="@color/color_theme_font" android:padding="20mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_agreement"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:tag="binding_12" android:layout_width="80mm" android:layout_height="80mm" android:layout_margin="80mm" android:src="@drawable/center_icon_theme"/>
+    </FrameLayout>
+</LinearLayout>

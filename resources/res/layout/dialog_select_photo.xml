@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_select_picture_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="46mm" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/btn_camera" android:background="@drawable/selector_select_picture_top_corners" android:padding="30mm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_picture_photograph"/>
+        <include layout="@layout/include_line_horizontal_05dp_f8f8f8"/>
+        <Button android:textSize="46mm" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/btn_album" android:background="@drawable/selector_select_picture_bottom_corners" android:padding="30mm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_picture_select_from_album"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_select_picture_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" android:layout_marginBottom="@dimen/dp_5">
+        <Button android:textSize="46mm" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/btn_cancel" android:background="@drawable/selector_select_picture_all_corners" android:padding="30mm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_picture_cancel"/>
+    </LinearLayout>
+</LinearLayout>

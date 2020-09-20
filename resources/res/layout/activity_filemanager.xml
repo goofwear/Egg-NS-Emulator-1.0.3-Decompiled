@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_filemanager_0" android:background="#50000000" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:tag="binding_1" android:background="@drawable/pop_icon_close" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:scaleType="fitXY" app:layout_constraintLeft_toRightOf="@+id/layout_container" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_container" android:background="@drawable/bg_circular_white_2" android:paddingLeft="25dp" android:paddingRight="25dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="140dp" android:layout_marginRight="140dp" android:layout_marginBottom="20dp">
+        <RelativeLayout android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/fileState_rel" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/title_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fileState_rel">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="30dp">
+                    <ImageView android:layout_gravity="center" android:layout_width="60dp" android:layout_height="45dp" android:src="@drawable/pop_icon_folder" android:scaleType="fitXY"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/color_font_2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/dialog_no_doc"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:tag="binding_2" android:background="@drawable/bg_circular_red_bg" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:text="@string/sure"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

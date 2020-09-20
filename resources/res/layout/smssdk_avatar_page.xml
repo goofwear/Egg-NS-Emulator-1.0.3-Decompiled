@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/smssdk_titlebar_height" layout="@layout/smssdk_titlebar"/>
+    <TextView android:textSize="20sp" android:textColor="#2a2b30" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="请填写您的资料"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp">
+        <com.mob.tools.gui.AsyncImageView android:id="@+id/iv_avatar" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/smssdk_cp_default_avatar" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+        <TextView android:textSize="14sp" android:textColor="#c7c7c7" android:id="@+id/tv_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击选择头像" android:singleLine="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="56dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/tv_temp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" android:layout_alignBaseline="@+id/et_nickname" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <EditText android:textSize="14sp" android:textColorHint="#c7c7c7" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/et_nickname" android:background="@null" android:paddingLeft="62dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:hint="请填写您的昵称" android:singleLine="true" android:layout_toRightOf="@+id/tv_temp1"/>
+        <View android:background="#e0e0e6" android:layout_width="match_parent" android:layout_height="2px" android:layout_below="@+id/et_nickname"/>
+    </RelativeLayout>
+    <Button android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bt_submit_profile" android:background="@drawable/smssdk_btn_enable" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_marginRight="20dp" android:text="提交资料"/>
+</LinearLayout>

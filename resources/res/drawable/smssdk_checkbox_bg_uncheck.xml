@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:shape="oval">
+    <solid android:color="@color/smssdk_common_transparent"/>
+    <stroke android:width="2dp" android:color="@color/smssdk_common_line_gray"/>
+    <size android:height="20dp" android:width="20dp"/>
+</shape>

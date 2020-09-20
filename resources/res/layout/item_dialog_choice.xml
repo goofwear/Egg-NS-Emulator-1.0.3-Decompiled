@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/checkbox_layout" android:background="#eaeaea" android:paddingLeft="37mm" android:paddingRight="60mm" android:layout_width="match_parent" android:layout_height="130mm" android:layout_marginBottom="20mm">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="36mm" android:textColor="#000000" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="30mm" android:textColor="#666666" android:id="@+id/tv_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10mm"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="44mm" android:layout_height="44mm" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/checkbox" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/pop_icon_input_nomal" android:scaleType="fitXY"/>
+    </FrameLayout>
+</LinearLayout>

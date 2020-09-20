@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_profile" android:background="@color/smssdk_white" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="80dp">
+    <com.mob.tools.gui.AsyncImageView android:id="@+id/iv_avatar" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/smssdk_cp_default_avatar" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_weight="1">
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/smssdk_black" android:id="@+id/tv_nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/smssdk_my_profile"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_phone_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/smssdk_phone" android:scaleType="fitCenter"/>
+            <TextView android:textSize="13sp" android:textColor="@color/smssdk_gray" android:id="@+id/tv_profile_phone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/smssdk_main_color" android:gravity="center" android:id="@+id/tv_profile_rebind" android:layout_width="80dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:text="@string/smssdk_bind_profile"/>
+</LinearLayout>

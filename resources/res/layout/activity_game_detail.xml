@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/activity_game_detail_0" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="2mm" android:layout_marginTop="85mm"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="126mm" android:layout_marginTop="60mm" android:layout_marginRight="126mm">
+        <ImageView android:id="@+id/iv" android:tag="binding_1" android:layout_width="20mm" android:layout_height="33mm" android:src="@drawable/nav_icon_back" android:scaleType="fitXY"/>
+        <TextView android:textSize="36mm" android:textColor="@color/color_theme_font" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20mm" android:text="@string/game_detail_back"/>
+        <View android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_help" android:tag="binding_3" android:layout_width="59mm" android:layout_height="58mm" android:src="@drawable/home_icon_question" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_circular_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="39mm">
+            <ImageView android:layout_width="45mm" android:layout_height="26mm" android:layout_marginLeft="64mm" android:layout_marginTop="16mm" android:layout_marginBottom="16mm" android:src="@drawable/home_icon_play_link" android:scaleType="fitXY"/>
+            <TextView android:textSize="28mm" android:textColor="@color/color_font_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23mm" android:layout_marginRight="64mm" android:text="未连接"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="126mm" android:layout_marginTop="67mm" android:layout_marginRight="140mm">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:background="@drawable/bg_circular_white_2" android:padding="8mm" android:layout_width="234mm" android:layout_height="234mm">
+                <ImageView android:background="@color/color_font_2" android:padding="60mm" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/gamepic_nomal"/>
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <TextView android:textSize="36mm" android:textColor="@color/white" android:tag="binding_4" android:background="@color/color_bg_red" android:paddingLeft="40mm" android:paddingTop="20mm" android:paddingRight="40mm" android:paddingBottom="20mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50mm" android:text="@string/game_detail_start_game"/>
+            <TextView android:textSize="36mm" android:textColor="@color/white" android:tag="binding_5" android:background="@color/color_font_blue" android:paddingLeft="40mm" android:paddingTop="20mm" android:paddingRight="40mm" android:paddingBottom="20mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27mm" android:text="@string/game_detail_game_setting"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="134mm">
+            <TextView android:textSize="48mm" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apex英雄"/>
+            <TextView android:textSize="32mm" android:textColor="@color/color_font_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17mm" android:text="Apex Legends"/>
+            <TextView android:textSize="24mm" android:textColor="@color/color_font_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35mm" android:text="《Apex英雄》（英语：Apex Legends），是一个由Respawn Entertainment开发，由艺电发行的免费大逃杀类多人在线角色扮演第一人称射击游戏，沿用《泰坦》系列的世界观。该游戏于2019年2月4日发布Microsoft Windows、Xbox One 和PS4版本，并将于2020年内推出任天堂Switch版本。  《Apex英雄》适用经典的大逃杀游戏规则，但加入了英雄系统。游戏背景设定在《泰坦降臨2》的30年以后。游戏中并不会出现泰坦，但包含了很多《泰坦》的元素和特征。  游戏以3人小队为单位进行游戏，每局游戏最多有60人（目前新增了雙排模式）。每位玩家可以从十三位传奇角色中选择一位进行游戏，每位英雄都有其独特的技能，玩家可以自定义其外观。队伍空投落地后需要寻找武器、弹药及其他装备，小队间互相战斗至最后存活一队为胜。游戏特有复活系统，如有队友死亡，玩家可以在时限内(90s)取得阵亡队友的旗帜，并将其携至重生点即可复活队友。同时，游戏也设有较为详细的标记功能，也可进行队伍语音。  《Apex英雄》游戏本体免费，游戏支持微交易，玩家可用游戏内货币购买新的传奇角色、人物外观、卡片外观、Apex组合包及其他限时购买内容。这些可购买内容也可以通过游戏对战奖励获得，它们不会影响游戏平衡。[2]  历史 5 外部链接 "/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

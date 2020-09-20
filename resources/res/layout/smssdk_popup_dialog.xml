@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/smssdk_popup_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/common_dialog_top_rl" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+        <TextView android:textSize="18dp" android:textColor="#555555" android:gravity="center_horizontal" android:id="@+id/common_dialog_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        <ImageView android:id="@+id/common_dialog_close_iv" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="15dp" android:src="@drawable/smssdk_ic_popup_dialog_close" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="14dp" android:textColor="#555555" android:gravity="center" android:id="@+id/common_dialog_message_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="17dp" android:minHeight="25dp" android:maxLines="5"/>
+    <View android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/common_dialog_bottom_ll" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="18dp" android:textColor="#0679fe" android:gravity="center" android:id="@+id/common_dialog_cancel_tv" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:id="@+id/common_dialog_vertical_line" android:background="#f5f5f5" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="18dp" android:textColor="#0679fe" android:gravity="center" android:id="@+id/common_dialog_confirm_tv" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

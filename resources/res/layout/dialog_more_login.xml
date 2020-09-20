@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/color_white1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="60mm" android:layout_height="50mm" android:src="@drawable/pop_icon_wechat"/>
+        <TextView android:textSize="@dimen/font_big" android:textColor="@color/color_black2" android:paddingTop="40mm" android:paddingBottom="40mm" android:layout_width="400mm" android:layout_height="wrap_content" android:text="@string/user_login_wechat" android:paddingStart="10mm"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/color_white1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2mm">
+        <ImageView android:layout_width="60mm" android:layout_height="50mm" android:src="@drawable/pop_icon_facebook"/>
+        <TextView android:textSize="@dimen/font_big" android:textColor="@color/color_black2" android:paddingTop="40mm" android:paddingBottom="40mm" android:layout_width="400mm" android:layout_height="wrap_content" android:text="@string/user_login_facebook" android:paddingStart="10mm"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/color_white1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2mm">
+        <ImageView android:id="@+id/btn_pwd_visible" android:layout_width="60mm" android:layout_height="50mm" android:src="@drawable/pop_icon_phone"/>
+        <TextView android:textSize="@dimen/font_big" android:textColor="@color/color_black2" android:id="@+id/et_pwd" android:paddingTop="40mm" android:paddingBottom="40mm" android:layout_width="400mm" android:layout_height="wrap_content" android:text="@string/user_login_phone" android:paddingStart="10mm"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tv_cancel" android:background="@color/color_white1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30mm">
+        <TextView android:textSize="@dimen/font_big" android:textColor="@color/color_font_red" android:paddingTop="40mm" android:paddingBottom="40mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel"/>
+    </LinearLayout>
+</LinearLayout>

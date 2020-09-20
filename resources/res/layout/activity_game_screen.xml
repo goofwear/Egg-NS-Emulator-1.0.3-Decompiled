@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <io.switchdroid.NSSurfaceView android:id="@+id/surface_emulation" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/layout_loading_screen" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/image_banner" android:layout_width="100dp" android:layout_height="50dp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+        <pl.droidsonroids.gif.GifImageView android:id="@+id/image_logo" android:layout_width="150dp" android:layout_height="100dp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#87d618" android:id="@+id/tv_profile1" android:paddingLeft="6dp" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

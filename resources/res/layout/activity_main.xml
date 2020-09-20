@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/activity_main_0" android:background="@drawable/bitmap_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="2mm" android:layout_marginTop="85mm"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="202mm" android:layout_marginTop="74mm" android:layout_marginRight="126mm">
+        <ImageView android:id="@+id/iv" android:tag="binding_1" android:layout_width="80mm" android:layout_height="80mm" android:src="@drawable/image_user_nomal" android:scaleType="fitXY"/>
+        <TextView android:textSize="36mm" android:textColor="@color/color_theme_font" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20mm" android:text="@string/main_personal_center_title"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_help" android:tag="binding_3" android:layout_width="59mm" android:layout_height="58mm" android:src="@drawable/home_icon_question" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_circular_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="39mm">
+            <ImageView android:tag="binding_4" android:layout_width="45mm" android:layout_height="26mm" android:layout_marginLeft="54mm" android:layout_marginTop="18mm" android:layout_marginBottom="18mm" android:scaleType="fitXY"/>
+            <TextView android:textSize="28mm" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23mm" android:layout_marginRight="54mm"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@+id/recycler_view" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/nogame" android:layout_width="400mm" android:layout_height="250mm"/>
+            <TextView android:textSize="@dimen/font_big" android:textColor="@color/color_theme_font" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40mm" android:text="@string/no_games"/>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="32mm" android:textColor="@color/color_bg_red" android:layout_gravity="center" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25mm" android:text="@string/setting_tips"/>
+    <TextView android:textSize="36mm" android:textColor="@color/color_font_red" android:layout_gravity="center_horizontal" android:tag="binding_9" android:background="@drawable/bg_circular_red_border" android:paddingLeft="110mm" android:paddingTop="23mm" android:paddingRight="110mm" android:paddingBottom="23mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60mm" android:text="@string/main_personal_center_game_setting"/>
+</LinearLayout>
